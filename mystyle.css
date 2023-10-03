@@ -1,0 +1,21 @@
+a:link{
+    color: tomato;
+    text-decoration: dashed;
+    background-color: aqua;
+}
+a:visited{
+    color: blueviolet;
+    text-decoration: dotted;
+    background-color: brown;
+}
+a:hover{
+    color: coral;
+    text-decoration: line-through;
+    background-color: chartreuse;
+
+}
+a:active{
+    color: darkgreen;
+    text-decoration: underline;
+    background-color: indianred;
+}

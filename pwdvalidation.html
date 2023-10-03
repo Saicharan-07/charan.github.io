@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PWD Validation</title>
+    <script>
+        function testpassword(){
+            var res;
+            var str = document.getElementById("t1").value;
+            if(str.match(/[A-Z]/g) && str.match(/[a-z]/g) 
+            && str.match(/[0-9]/g) && str.length>=8)
+            res="true";
+            else if (str.match(/[A-Z]/g) || str.match(/[a-z]/g))
+            res="false";
+            else
+            res="weak";
+            return document.getElementById("t2").value=res;
+
+        }
+    </script>
+    </head>
+    <body>
+        password: <input type="text" id="t1"
+        placeholder="Enter your password"><br><br>
+        Result: <input type="text" id="t2"><br><br>
+        <input type="submit" value="check" onclick="testpassword()">
+    </body>
+
+</html>
